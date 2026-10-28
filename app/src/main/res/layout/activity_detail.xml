@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <HorizontalScrollView android:id="@+id/photoStrip"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:scrollbars="none" android:visibility="gone">
+            <LinearLayout android:id="@+id/photoStripInner"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <TextView android:id="@+id/tvName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/tvType" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#2E7D32"
+            android:layout_marginTop="2dp" />
+
+        <TextView android:id="@+id/tvQty" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvDesc" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvLocation" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvTags" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvAsset" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvMfr" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvModel" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvSerial" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvWarranty" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvNotes" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvAttachTitle" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp"
+            android:textSize="16sp" android:textStyle="bold"
+            android:text="附件" android:visibility="gone" />
+
+        <LinearLayout android:id="@+id/attachList"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp" />
+
+        <Button android:id="@+id/btnEdit" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="✏️  编辑物品"
+            android:layout_marginTop="16dp" />
+
+        <Button android:id="@+id/btnOpenWeb" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="在浏览器中打开"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+    </LinearLayout>
+</ScrollView>

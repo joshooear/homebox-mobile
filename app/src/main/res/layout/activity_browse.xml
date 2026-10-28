@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="位置" />
+    <Spinner android:id="@+id/spLocation" android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="标签" android:layout_marginTop="4dp" />
+    <Spinner android:id="@+id/spTag" android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/btnFilter" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="🔍  筛选"
+        android:layout_marginTop="8dp" android:padding="12dp" />
+
+    <TextView android:id="@+id/tvCount" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:textColor="#666666" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+        <Button android:id="@+id/btnPrev" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="上一页" />
+        <TextView android:id="@+id/tvPage" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:gravity="center" android:textColor="#666666" />
+        <Button android:id="@+id/btnNext" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="下一页" />
+    </LinearLayout>
+
+    <ListView android:id="@+id/listResults" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

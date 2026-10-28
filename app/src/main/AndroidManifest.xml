@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 附件下载到公共下载目录（Android 9 及以下需要） -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Homebox">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".CreateItemActivity" android:exported="false" />
+        <activity android:name=".EntityDetailActivity" android:exported="false" />
+        <activity android:name=".SearchActivity" android:exported="false" />
+        <activity android:name=".ImagePreviewActivity" android:exported="false"
+            android:theme="@style/Theme.Homebox" />
+        <!-- 扫码界面强制竖屏（覆盖库的 fullSensor 默认值） -->
+        <activity android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="android:screenOrientation" />
+        <activity android:name=".BrowseActivity" android:exported="false" />
+        <activity android:name=".EditItemActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

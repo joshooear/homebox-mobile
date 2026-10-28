@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="照片" android:textStyle="bold" android:textSize="16sp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="上传压缩档位：" android:layout_marginTop="8dp" />
+        <Spinner android:id="@+id/spQuality" android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button android:id="@+id/btnUploadPhoto" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="📷  上传照片（可多选，追加）"
+            android:layout_marginTop="4dp" />
+
+        <TextView android:id="@+id/tvPhotoCount" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp"
+            android:textColor="#666666" android:textSize="13sp" />
+
+        <LinearLayout android:id="@+id/photoList"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="名称 *" android:layout_marginTop="12dp" />
+        <EditText android:id="@+id/etName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="说明（描述）" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/etDesc" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="textMultiLine"
+            android:minLines="2" android:gravity="top" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="备注" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/etNotes" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="textMultiLine"
+            android:minLines="3" android:gravity="top" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="数量" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/etQty" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="numberDecimal" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="制造商" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/etMfr" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="型号" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/etModel" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="序列号" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/etSerial" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="资产编号" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/etAsset" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="text" />
+
+        <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:textColor="#2E7D32" />
+
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" />
+
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="💾  保存修改"
+            android:layout_marginTop="12dp" android:padding="14dp" />
+
+        <Button android:id="@+id/btnDeleteItem" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="🗑  删除物品"
+            android:layout_marginTop="24dp" android:padding="14dp"
+            android:textColor="#C62828" />
+    </LinearLayout>
+</ScrollView>

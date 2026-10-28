@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_vertical"
+    android:paddingTop="8dp" android:paddingBottom="8dp">
+
+    <TextView android:id="@+id/tvAttachName"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:textSize="15sp"
+        android:maxLines="2" android:ellipsize="middle" />
+
+    <Button android:id="@+id/btnDownload"
+        android:layout_width="wrap_content" android:layout_height="36dp"
+        android:text="下载" android:textSize="13sp"
+        android:paddingLeft="14dp" android:paddingRight="14dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_vertical"
+    android:paddingTop="6dp" android:paddingBottom="6dp">
+
+    <ImageView android:id="@+id/ivPhoto"
+        android:layout_width="64dp" android:layout_height="64dp"
+        android:scaleType="centerCrop" android:visibility="gone"
+        android:contentDescription="照片" android:background="#EEEEEE" />
+
+    <TextView android:id="@+id/tvPhotoName"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:layout_marginStart="12dp"
+        android:maxLines="2" android:ellipsize="end" />
+
+    <Button android:id="@+id/btnDeletePhoto"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="删除" style="@style/Widget.MaterialComponents.Button.TextButton" />
+</LinearLayout>

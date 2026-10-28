@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Homebox 助手" android:textSize="26sp" android:textStyle="bold"
+        android:layout_marginBottom="6dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="连接你的 Homebox 实例" android:textSize="14sp" android:textColor="#888"
+        android:layout_marginBottom="16dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="服务器地址" />
+    <EditText
+        android:id="@+id/etServer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="https://homebox.example.com"
+        android:inputType="textUri" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="用户名" android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/etUser" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="用户名 / 邮箱"
+        android:inputType="textEmailAddress" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="密码" android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/etPass" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="密码"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/cbStay" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="保持登录状态"
+        android:layout_marginTop="8dp" android:checked="true" />
+
+    <Button
+        android:id="@+id/btnLogin" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="登录"
+        android:layout_marginTop="16dp" android:padding="14dp"
+        android:backgroundTint="#7b1fa2" android:textColor="#ffffff" />
+
+    <ProgressBar
+        android:id="@+id/progress" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp" android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvStatus" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp"
+        android:textColor="#c62828" android:textSize="14sp" />
+</LinearLayout>

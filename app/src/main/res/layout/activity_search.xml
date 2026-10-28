@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText android:id="@+id/etQuery" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:hint="资产号 / 名称 / 关键字" android:text="#000-"
+            android:inputType="text"
+            android:imeOptions="actionSearch" />
+        <Button android:id="@+id/btnSearch" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="搜索" />
+    </LinearLayout>
+
+    <Button android:id="@+id/btnScan" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="📷  扫码识别物品"
+        android:textSize="16sp" android:layout_marginTop="8dp" android:padding="14dp" />
+
+    <TextView android:id="@+id/tvCount" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:textColor="#666666" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+        <Button android:id="@+id/btnPrev" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="上一页" />
+        <TextView android:id="@+id/tvPage" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:gravity="center" android:textColor="#666666" />
+        <Button android:id="@+id/btnNext" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="下一页" />
+    </LinearLayout>
+
+    <ListView android:id="@+id/listResults" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

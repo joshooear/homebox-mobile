@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvServerInfo" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="14sp"
+        android:textColor="#666666" />
+
+    <Button
+        android:id="@+id/btnIdentify" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="📷  识别 / 查找物品"
+        android:textSize="18sp" android:layout_marginTop="24dp"
+        android:padding="18dp" />
+
+    <Button
+        android:id="@+id/btnBrowse" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="📂  按位置 / 标签查看"
+        android:textSize="18sp" android:layout_marginTop="12dp"
+        android:padding="18dp" />
+
+    <Button
+        android:id="@+id/btnCreate" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="➕  新建物品"
+        android:textSize="18sp" android:layout_marginTop="12dp"
+        android:padding="18dp" />
+
+    <View android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="提示：识别/查找支持扫码（物品链接、UUID）与手动搜索；搜索框缺省 #000- 为资产号前缀。"
+        android:textSize="12sp" android:textColor="#999999" />
+
+    <Button
+        android:id="@+id/btnLogout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="退出登录"
+        android:layout_marginTop="8dp" style="@style/Widget.MaterialComponents.Button.TextButton" />
+</LinearLayout>

@@ -66,9 +66,7 @@ class LoginActivity : AppCompatActivity() {
             }) {
                 val client = HomeboxClient(server)
                 val r = client.login(user, pass, cbStay.isChecked)
-                Prefs.saveSession(
-                    this, client.server, r.token, user, pass, cbStay.isChecked
-                )
+                Prefs.saveLogin(this, client.server, user, r.token)
                 runOnUiThread {
                     progress.visibility = View.GONE
                     tvStatus.text = "登录成功"

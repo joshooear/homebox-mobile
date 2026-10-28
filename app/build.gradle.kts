@@ -1,3 +1,4 @@
+import java.util.Properties
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -47,7 +48,7 @@ dependencies {
 
 // 签名信息从 keystore.properties 读取（不入库），格式：
 // storeFile=keystore/homebox.jks  storePassword=...  keyAlias=...  keyPassword=...
-val keystoreProps = java.util.Properties().apply {
+val keystoreProps = Properties().apply {
     val f = rootProject.file("keystore.properties")
     if (f.exists()) f.inputStream().use { load(it) }
 }
